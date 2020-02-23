@@ -9,30 +9,46 @@ body {
   font-family: 'Lato', 'Open Sans', sans-serif;
 }
 
-.header, .slider, .footer, .services, .conteiner, .layout-3-column, .wrapper, .navigation {
+.header, .slider, .footer, .services, .conteiner, .layout-3-column, .wrapper, .navigation, .header__navigation{
 overflow: hidden;
 
 }
 .navigation {
-  font-size: 12px;
-  font-weight: bold;
+
+}
+
+.wrapper {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  max-width: 1020px;
   
 }
 
+.wrapper p{
+  font-weight: 300px;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.06px;
+  
+}
+
+
+
+
 .header__navigation {
-  line-height: 1;
-  text-align: justifyLeft;
-position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
 right: 40px;
-top: 43px;
+top: 42px;
+margin-left: 50px;;
 }
 
 a {
   color: rgb(255, 255, 255);
-
 }
-
-
 
 
 h1 a:hover {
@@ -47,9 +63,8 @@ h1 a span:hover {
     color: rgb(240, 108, 100);
   }
 
-}
 
-.wrapper {
+.wrapper2 {
   
 }
 
@@ -60,7 +75,7 @@ height: 89px;
 color: rgb(255, 255, 255);
 position: relative;
 display: flex;
- 
+
 }
 
 .header__line {
@@ -101,8 +116,7 @@ display: flex;
 }
 
 .icon {
-  width: 59px;
-  height: 59px;
+  margin-top: 20px;
 }
 
 
@@ -115,9 +129,7 @@ display: flex;
     display: flex;  
 }
 
-li {
 
-}
 
 
 a {
@@ -141,13 +153,14 @@ a {
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
-  width:auto;
-  margin: 0 30px 0 30px;
+margin-left: 0;
+margin-right: 0;
+max-width: 1020px;
 
-  bottom: 67px;
-  position: absolute;
+  margin-bottom: 0;
+margin-top: 0px;
   justify-content: space-around;
-  left: 0;
+  
 }
 
 .services__icon {
@@ -157,8 +170,11 @@ a {
 }
 
 .block-shadow {
-bottom: 67px;
+
+
 }
+
+
 .services__p {
 margin-left: 10px;
 margin-right: 10px;
@@ -168,34 +184,136 @@ margin-right: 10px;
 .services {
 
   display: flex;
-  justify-content: space-between;
- 
+  justify-content: space-around;
   
+
 }
 
 .icon {
   display: inline-block;
+  width: 59px;
+  height: 59px;
 }
 
 .layout-3-column p {
   font-size: 12px;
   font-weight: regular;
   line-height: 1.8;
-  width: 220px;
 }
 
 h1 {
   font-size: 25px;
   font-weight: Bold;
+  position: absolute;
+  left: 40px;
+  top: 14px;
+  letter-spacing: -0.5px;
+display: inline-block;
 }
 
 
+.h2 {
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 28px;
+  margin-right: 0;
+
+  }
+  
+  
+  
+  
 h2 {
   font-size: 30px;
   font-weight: 900;
+  letter-spacing: -0.2px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 900;
+  margin-bottom: 12px;
+  margin-top: 16px;
+
+  letter-spacing: -0.09px;
+}
+
+.services__p p {
+  margin-top: 0px;
+  letter-spacing: 0.01px;
+}
+
+.slider__content {
+  position: relative;
+  min-height: 600px;
+}
+
+.phone__vertical {
+  position: absolute;
+  left: 112px;
+  top: 53px;
+  z-index: 2;
+}
+
+.shadow__vertical {
+  position: absolute;
+  left: 113px;
+  top: 52px;
+  z-index: 1;
+}
+
+.phone__horizontal {
+  position: absolute;
+  right: 136px;
+  top: 173px;
+  z-index: 2;
+}
+
+.shadow__horizontal {
+  position: absolute;
+  right: 112px;
+  top: 173px;
+  z-index: 1;
+}
+
+.phone-v__background {
+  position: absolute;
+  left: 122px;
+  top: 115px;
+  z-index: 3;
+}
+
+
+
+.phone-h__background {
+  position: absolute;
+  right: 199px;
+  top: 184px;
+z-index: 3;
+}
+
+.chev__right {
+  position: absolute;
+  right: 40px;
+  top: 280px;
+
+}
+
+.chev__left:hover {
+  background-color: rgba(240, 239, 234, 0.438);
+}
+
+.chev__right:hover {
+  background-color: rgba(240, 239, 234, 0.438);
+} 
+
+.chev__left {
+  position: absolute;
+  left: 40px;
+  top: 280px;
+}
+
+.wraper3 {
+
 }
