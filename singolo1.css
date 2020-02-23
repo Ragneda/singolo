@@ -32,10 +32,17 @@ a {
 
 
 
-.navigation a:hover {
 
-    background-color: #ddd;
-    color: black;
+h1 a:hover {
+  color: rgb(240, 108, 100);
+}
+
+h1 a span:hover {
+  color: rgb(255, 255, 255);
+} 
+
+.navigation a:hover {
+    color: rgb(240, 108, 100);
   }
 
 }
