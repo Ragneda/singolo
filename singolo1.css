@@ -9,10 +9,11 @@ body {
   font-family: 'Lato', 'Open Sans', sans-serif;
 }
 
-.header, .slider, .footer, .services, .conteiner, .layout-3-column, .wrapper, .navigation, .header__navigation{
+.header, .slider, .footer, .services, .conteiner, .layout-3-column, .wrapper, .navigation, .header__navigation, .services__p {
 overflow: hidden;
 
 }
+
 .navigation {
 
 }
