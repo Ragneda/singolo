@@ -369,7 +369,7 @@
     font-weight: 300px;
     font-size: 18px;
     line-height: 1.7;
-    letter-spacing: -0.06px;
+   
     
   }
   
@@ -817,7 +817,6 @@ textarea {
   .quote {
     background-color: #f06c64;
   padding: 58px 0 0 0;
-  padding-bottom: 31px;
   box-shadow: 0px 6px 0px 0px #ea676b;
 
   }
