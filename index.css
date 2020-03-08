@@ -373,7 +373,9 @@
     
   }
   
-  
+p {
+text-align: justify;
+}
   
   
   .header__navigation {
