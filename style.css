@@ -1049,6 +1049,13 @@ padding-left: 4px;
   .footer__icon {
   }
 
+ .background__employee {
+    height: 300px;
+    width: 300px;
+    background: #464b5e;
+    margin: 10px 0 10px 0;
+    width: 23.2%;
+  }
   .footer__line {
     background-color: #ea676b;
   height: 6px;
