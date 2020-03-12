@@ -923,7 +923,7 @@ padding: 0 0 0px 0;
   
 
 
-  layout-2-column {
+  .layout-2-column {
     display: flex;
     overflow: hidden;
     
