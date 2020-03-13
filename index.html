@@ -14,18 +14,20 @@
     <header class="header">
         <div class="wrapper header__wrapper">
             <h1 class="header__title"><a class="logo" href="#">SINGOLO<span class="star">*</span></a></h1>
+
+        
             <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__link"><a href="/home"><span class="red">HOME</span><span
+                <ul class="navigation" id="menu">
+                    <li class="navigation__link active"><a href="/home"><span class="red">HOME</span><span
                                 class="space">__</span><span class="point">•</span><span class="space">__</span></a>
                     </li>
-                    <li class="navigation__link"><a href="/services">SERVICES<span class="space">__</span><span
+                    <li class="navigation__link active"><a href="/services">SERVICES<span class="space">__</span><span
                                 class="point">•</span><span class="space">__</span></a></li>
-                    <li class="navigation__link"><a href="/portfolio">PORTFOLIO<span class="space">__</span><span
+                    <li class="navigation__link active"><a href="/portfolio">PORTFOLIO<span class="space">__</span><span
+                                class="point active">•</span><span class="space">__</span></a></li>
+                    <li class="navigation__link active"><a href="/about">ABOUT<span class="space">__</span><span
                                 class="point">•</span><span class="space">__</span></a></li>
-                    <li class="navigation__link"><a href="/about">ABOUT<span class="space">__</span><span
-                                class="point">•</span><span class="space">__</span></a></li>
-                    <li class="navigation__link"><a href="/about">CONTACT</a></li>
+                    <li class="navigation__link active"><a href="/about">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,7 +61,7 @@
                     <p class="ourServices__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                         Duis mollis, non commodo
                         luctus, nisi
-                        erat porttitor<br>
+                        erat porttitor
                         ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
                         mauris condimentum
                         nibh.
@@ -72,8 +74,8 @@
                             </div>
                             <div class="services__p">
                                 <h3 class="services__title">Custom Design</h3>
-                                <p class="services__text">Curabitur vestibulum eget mauris quis<br>
-                                    laoreet. Phasellus in quam laoreet, viverra<br>
+                                <p class="services__text">Curabitur vestibulum eget mauris quis
+                                    laoreet. Phasellus in quam laoreet, viverra
                                     lacus ut, ultrices velit.</p>
                             </div>
                         </div>
@@ -83,8 +85,8 @@
                             </div>
                             <div class="services__p">
                                 <h3 class="services__title">Inovative Ideas</h3>
-                                <p class="services__text">Quisque luctus, quam eget molestie com-<br>
-                                    modo, lacus purus cursus purus, nec<br>
+                                <p class="services__text">Quisque luctus, quam eget molestie com-
+                                    modo, lacus purus cursus purus, nec
                                     rutrum tellus dolor id lorem.</p>
                             </div>
                         </div>
@@ -94,8 +96,8 @@
                             </div>
                             <div class="services__p">
                                 <h3 class="services__title">Love Is The Answer</h3>
-                                <p class="services__text">Nulla sed nunc et tortor luctus faucibus.<br>
-                                    Morbi at aliquet turpis, et consequat felis.<br>
+                                <p class="services__text">Nulla sed nunc et tortor luctus faucibus.
+                                    Morbi at aliquet turpis, et consequat felis.
                                     Quisque condimentum.</p>
                             </div>
                         </div>
@@ -106,8 +108,8 @@
                             </div>
                             <div class="services__p">
                                 <h3 class="services__title">Responsive Layout</h3>
-                                <p class="services__text">Sed porttitor placerat rhoncus. In at nunc<br>
-                                    tellus. Maecenas blandit nunc ligula. Prae-<br>
+                                <p class="services__text">Sed porttitor placerat rhoncus. In at nunc
+                                    tellus. Maecenas blandit nunc ligula. Prae-
                                     sent elit leo.</p>
                             </div>
                         </div>
@@ -117,8 +119,8 @@
                             </div>
                             <div class="services__p">
                                 <h3 class="services__title">24 / 7 Support</h3>
-                                <p class="services__text">Vivamus vel quam lacinia, tincidunt dui<br>
-                                    non, vehicula nisi. Nulla a sem erat. Pellen-<br>
+                                <p class="services__text">Vivamus vel quam lacinia, tincidunt dui
+                                    non, vehicula nisi. Nulla a sem erat. Pellen-
                                     tesque egestas venenatis lorem .</p>
                             </div>
                         </div>
@@ -128,8 +130,8 @@
                             </div>
                             <div class="services__p">
                                 <h3 class="services__title">Feel Like A Star</h3>
-                                <p class="services__text">Quisque hendrerit purus dapibus, ornare<br>
-                                    nibh vitae, viverra nibh. Fusce vitae<br>
+                                <p class="services__text">Quisque hendrerit purus dapibus, ornare
+                                    nibh vitae, viverra nibh. Fusce vitae
                                     aliquam tellus.</p>
                             </div>
                         </div>
@@ -151,8 +153,7 @@
                     <span class="tag tag_selected">Artwork</span>
                 </nav>
                 <div class="layout-4-column">
-                    <span class="background__portfolio"><img src="./assets/Image/2/1.jpg"
-                            alt="graphic drawing with boat">
+                    <span class="background__portfolio"><img src="assets/Image/2/1.jpg" alt="graphic drawing with boat">
                     </span>
                     <span class="background__portfolio"><img src="./assets/Image/2/2.jpg"
                             alt="graphic drawing with space rabbits"></span>
@@ -180,20 +181,19 @@
         </section>
         <div class="aboutUs__line"></div>
         <section class="aboutUs">
-            <div class="wrapper2">
+            <div class="wrapper">
                 <h2 class="aboutUs__title">About Us</h2>
                 <p class="aboutUs__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                    mollis,
-                    non commodo luctus,
-                    nisi erat porttitor<br>
-                    ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                    mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
+                    dapibus, tellus ac cursus commodo,
                     tortor mauris condimentum nibh.</p>
                 <div class="layout-3-column2">
                     <div class="employee">
                         <div class="employee__content">
-                            <span><img src="./assets/Image/2/person1.jpg" alt="employee photo"></span>
+                            <span class="background__employee"><img src="./assets/Image/2/person1.jpg"
+                                    alt="employee photo"></span>
                             <h3 class="employee__title">Adam Jensen</h3>
-                            <p class="employee__text">Quisque luctus, quam eget molestie commodo, lacus purus<br>
+                            <p class="employee__text">Quisque luctus, quam eget molestie commodo, lacus purus
                                 cursus purus, nec rutrum tellus dolor id lorem.</p>
                             <div class="services__icon">
                                 <span class="ico"><img src="assets/Icon/2/Facebook.png" alt="icon facebook"></span>
@@ -203,9 +203,10 @@
                             </div>
                         </div>
                         <div class="employee__content">
-                            <span><img src="./assets/Image/2/person2.jpg" alt="employee photo"></span>
+                            <span class="background__employee"><img src="./assets/Image/2/person2.jpg"
+                                    alt="employee photo"></span>
                             <h3 class="employee__title">Desmond Miles</h3>
-                            <p class="employee__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus<br>
+                            <p class="employee__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus
                                 in quam laoreet, viverra lacus ut, ultrices velit.</p>
                             <div class="services__icon">
                                 <span class="ico"><img src="assets/Icon/2/Facebook.png" alt="icon facebook"></span>
@@ -215,9 +216,10 @@
                             </div>
                         </div>
                         <div class="employee__content">
-                            <span><img src="./assets/Image/2/person3.jpg" alt="employee photo"></span>
+                            <span class="background__employee"><img src="./assets/Image/2/person3.jpg"
+                                    alt="employee photo"></span>
                             <h3 class="employee__title">Scolara Visari</h3>
-                            <p class="employee__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet<br>
+                            <p class="employee__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
                                 turpis, et consequat felis. Quisque condimentum.</p>
                             <div class="services__icon">
                                 <span class="ico"><img src="assets/Icon/2/Facebook.png" alt="icon facebook"></span>
@@ -232,11 +234,11 @@
         </section>
         <div class="quote__line"></div>
         <section class="quote">
-            <div class="wrapper2">
+            <div class="wrapper">
                 <h2 class="quote__title">Get a Quote</h2>
                 <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
-                    non commodo luctus, nisi erat porttitor<br>
-                    ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
+                    tellus ac cursus commodo, tortor mauris
                     condimentum nibh.</p>
                 <div class="layout-2-column">
                     <div class="contact__form">
@@ -254,9 +256,9 @@
                     </div>
                     <div class="contact__content">
                         <h3 class="contact__title">Contact Information</h3>
-                        <p class="contact__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>
-                            ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat<br>
-                            libero. Nulla sed nunc et tortor luctus faucibus. Morbi at<br>
+                        <p class="contact__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-
+                            ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
+                            libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
                             aliquet turpis, et consequat felis. </p>
                         <div class="contact">
                             <p class="ico2">
@@ -282,7 +284,7 @@
     </main>
     <div class="footer__line"></div>
     <section class="footer">
-        <div class="wrapper2 footer__block">
+        <div class="wrapper footer__block">
             <p class="footer__text">© Copyright 2013 • by PSDchat com</p>
             <div class="footer__icon">
                 <span class="ico"><img src="assets/Icon/2/Facebook.png" alt="icon facebook"></span>
