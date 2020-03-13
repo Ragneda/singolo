@@ -417,6 +417,8 @@
     cursor: pointer;
   }
 
+  
+  
    .red {
     color: rgb(240, 108, 100);
   }
@@ -445,15 +447,9 @@
 
     .wrapper {
       max-width: 940px;
-      margin: auto;
+      margin: 0 auto;
     }  
 
-    .wrapper p{
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 1.7;
-      letter-spacing: -0.06px;
-    }
   
    
   .main__line {
@@ -518,7 +514,7 @@ a {
 
 
 .block-shadowed {
- padding-bottom: 15px;
+ padding-bottom: 25px;
  width: 32%;
 }
 
@@ -534,7 +530,7 @@ a {
 }
 
 .ourServices {
-padding-bottom: 35px;
+padding-bottom: 36px;
 }
 
 .ourServices__title {
@@ -551,13 +547,14 @@ padding-bottom: 35px;
 .ourServices__text {
   font-family: "Lato", "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2.1rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
   color: #666d89;
   margin: 0;
   text-align: justify;
-padding-top: 15px;
+  padding-top: 15px;
+
 }
 
 .icon {
@@ -572,25 +569,29 @@ padding-top: 8px;
 
 
 .layout-3-column p {
-  font-size: 12px;
+  font-size: 1.2rem;
    font-weight: 400;
- line-height: 1.8;
+ line-height: 2.1rem;
  text-align: justify;
 }
 
 .services__p{
 padding-left: 21px;
+
 }
 
 .services__title {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+  color: #666d89;
 }
 
   .services__text {
-    margin-top: 0px;
-    
+    margin: 0;
+    overflow: hidden;
+    color: #767e9e;
+    overflow: hidden;
   }
   
 
@@ -666,7 +667,7 @@ padding-left: 21px;
   
   .portfolio {
     background-color: #2d303a;
-    padding: 59px 0 56px 0;
+    padding: 58px 0 57px 0;
   } 
 
 .aboutUs__line {
@@ -676,7 +677,7 @@ padding-left: 21px;
 
 .portfolio__title {
     margin: 0;
-    padding: 0 0 14px 0;
+    padding: 0 0 20px 0;
    
   }
   
@@ -689,7 +690,7 @@ padding-left: 21px;
     text-align: justify;
     color: #666d89;
     margin: 0;
-    padding: 0 0 11px 0;
+    padding: 0 0 16px 0;
   }
   
   .portfoio__tags {
@@ -698,8 +699,7 @@ padding-left: 21px;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.5rem;
-    margin: 0;
-    padding: 0 0 15px 0;
+    margin-bottom: 0;
   }
   
   .ico :hover {
@@ -769,22 +769,21 @@ padding-left: 21px;
     margin: 0;
     line-height: 3.0rem;
     font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 0.042rem;
     text-align: justify;
+    color:  #767e9e;
   }
-  
-  .wrapper2 {
-    max-width: 940px;
-    margin: auto;
-  }  
+   
 
   .employee {
     display: flex;
-    padding-top: 46px;
+    padding-top: 45px;
   }
   
  .employee__title {
    margin: 0;
-   padding-top: 7px;
+   padding-top: 8px;
   color: #767e9e;
   white-space: nowrap;
   width: 300px;
@@ -797,9 +796,9 @@ padding-left: 21px;
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2.0rem;
     color: #767e9e;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.006rem;
     margin: 0;
     padding-top: 5px;
     padding-bottom: 17px;
@@ -863,7 +862,7 @@ padding-left: 21px;
   }
   
 .contact {
-  padding-top: 26px;
+  padding-top: 25px;
 }
 
 
@@ -887,7 +886,7 @@ padding-left: 21px;
     line-height: 3rem;
     color: #f0d8d9;
     margin: 0;
-    padding: 0 0 45px 0;
+    padding: 0 0 44px 0;
     text-align: justify;
   }
 
@@ -992,10 +991,12 @@ textarea {
   
 }
 
+
+
   .quote {
     background-color: #f06c64;
   padding: 58px 0 0 0;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   }
 
   .quote__line {
@@ -1015,7 +1016,7 @@ textarea {
 
     .footer__block {
       display: flex;
-      padding-top: 21px;
+      padding-top: 23px;
       padding-bottom: 17px;
       justify-content: space-between;
     }
@@ -1024,6 +1025,7 @@ textarea {
     margin: 0;
     padding-top: 9px;
     padding-bottom: 2px;
+    padding-left: 2px;
     font-size: 12px;
     font-weight: 400;
     color: #5b6179;
@@ -1045,20 +1047,17 @@ padding-left: 4px;
   }
 
   .icon_mail {
-    padding-right: 8px;
+    padding-right: 6px;
   }
 
   .footer__icon {
   }
 
- .background__employee {
-    height: 300px;
-    width: 300px;
-    background: #464b5e;
-    margin: 10px 0 10px 0;
-    width: 23.2%;
-  }
   .footer__line {
     background-color: #ea676b;
   height: 6px;
   }
+
+
+
+  
