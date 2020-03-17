@@ -200,6 +200,25 @@ const move4 = () => {
     images4.classList.remove('order3');
 }
 
+
+//Scroll
+const scrolls = document.querySelectorAll('a[href*="#"]')
+
+for (let scroll of scrolls) {
+    scroll.addEventListener('click', function (event) {
+        event.preventDefault();
+        const blockID = scroll.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+
+
+
+
+
 /*
 
     let items = document.querySelectorAll('.item');
