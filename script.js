@@ -1,8 +1,7 @@
 
-
 /*Button*/
 const BORDER = document.getElementById('images');
-const BUTTON = document.getElementById('btn');
+const FORM = document.getElementById('form');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 
 /*Header*/
@@ -22,16 +21,61 @@ HIDDEN_SLIDER2.addEventListener("click", () => {
 });
 
 
+/*Scroll*/
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const curPos = window.scrollY + 95;
+    const divs = document.querySelectorAll('section, body');
+    const links = document.querySelectorAll('#menu a');
+
+    divs.forEach((el) => {
+        if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+            links.forEach((a) => {
+                a.classList.remove('active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
+    });
+}
+
+
+//Scroll smooth
+const scrolls = document.querySelectorAll('a[href*="#"]')
+
+for (let scroll of scrolls) {
+    scroll.addEventListener('click', function (event) {
+        event.preventDefault();
+        const blockID = scroll.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+
+
+
+
 
 
 /*Button*/
-BUTTON.addEventListener("click", () => {
+FORM.addEventListener("submit", (event) => {
+    event.preventDefault();
     const subject = document.getElementById('subject').value.toString();
-    document.getElementById('result').innerText = subject;
-    if (subject.value === '') {
-        return alert('Без темы');
-    }
+    const description = document.getElementById('description').value.toString();
+    document.getElementById('result2').innerText = "Subject:  " + subject;
+    document.getElementById('result3').innerText = "Description:  " + description;
     document.getElementById('message-block').classList.remove("hidden");
+    if (document.getElementById('subject').value.toString() == '') {
+        document.getElementById('result2').innerText = "No subject";
+    };
+
+    if (document.getElementById('description').value.toString() == '') {
+        document.getElementById('result3').innerText = "No description";
+    };
 
 });
 
@@ -39,9 +83,13 @@ BUTTON.addEventListener("click", () => {
 
 
 CLOSE_BUTTON.addEventListener("click", () => {
-    document.getElementById('result').innerText = '';
+
     document.getElementById('message-block').classList.add("hidden");
+
 });
+
+
+
 
 
 /*Header*/
@@ -49,6 +97,8 @@ MENU.addEventListener("click", (event) => {
     MENU.querySelectorAll("a").forEach(el => el.classList.remove("active"));
     event.target.classList.add("active");
 });
+
+
 
 
 
@@ -119,6 +169,7 @@ document.querySelector('.control.right').addEventListener('click', function () {
 
 
 
+/*Tags*/
 
 window.onload = function () {
 
@@ -169,122 +220,47 @@ const selectClickedTag = (clickedTag) => {
 
 const move1 = () => {
     let images = document.querySelector('.layout-4-column');
-    images.classList.toggle('order1');
+    images.classList.toggle('move1');
     images.classList.remove('.layout-4-column-flex')
-    images.classList.remove('order3');
-    images.classList.remove('order4');
-    images.classList.remove('order2');
+    images.classList.remove('move3');
+    images.classList.remove('move4');
+    images.classList.remove('move2');
 }
 
 const move2 = () => {
     let images2 = document.querySelector('.layout-4-column');
-    images2.classList.toggle('order2');
-    images2.classList.remove('order1');
-    images2.classList.remove('order3');
-    images2.classList.remove('order4');
+    images2.classList.toggle('move2');
+    images2.classList.remove('move1');
+    images2.classList.remove('move3');
+    images2.classList.remove('move4');
 }
 
 const move3 = () => {
     let images3 = document.querySelector('.layout-4-column');
-    images3.classList.toggle('order3');
-    images3.classList.remove('order1');
-    images3.classList.remove('order2');
-    images3.classList.remove('order4');
+    images3.classList.toggle('move3');
+    images3.classList.remove('move1');
+    images3.classList.remove('move2');
+    images3.classList.remove('move4');
 }
 
 const move4 = () => {
     let images4 = document.querySelector('.layout-4-column');
-    images4.classList.toggle('order4');
-    images4.classList.remove('order1');
-    images4.classList.remove('order2');
-    images4.classList.remove('order3');
-}
-
-
-//Scroll
-const scrolls = document.querySelectorAll('a[href*="#"]')
-
-for (let scroll of scrolls) {
-    scroll.addEventListener('click', function (event) {
-        event.preventDefault();
-        const blockID = scroll.getAttribute('href')
-        document.querySelector('' + blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    })
+    images4.classList.toggle('move4');
+    images4.classList.remove('move1');
+    images4.classList.remove('move2');
+    images4.classList.remove('move3');
 }
 
 
 
 
 
-/*
-
-    let items = document.querySelectorAll('.item');
-    let currenItem = 0;
-    let isEnabled = true;
-
-    function changeCurrentItem(n) {
-        currentItem = (n + item.length) % items.length;
-    }
-
-
-
-    document.querySelector('.tag').addEventListener('click', function() {
-      if (isEnabled) {
-        previousItem (currentItem);
-      }
-    });
-
-
-    function previousItem(n) {
-      changeCurrentItem(n - 1);
-    }
-
-    function previousItem(n) {
-        changeCurrentItem(n - 1);
-      }
-
-
-
-    document.querySelector('.portfolio__tags.tag').addEventListener('click', function () {
-        if (isEnabled) {
-            previousPortfolio(currentPortfolio);
-        }
-    });
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-/*const showAllPortfolio = () => {
-
-}
-
-
-const filterPortfolioBySelectedTag = (selectedTag) => {
-    let portfolios = document.querySelectorAll('.portfolio');
-    portfolios.forEach(portfolio => {
-        portfolio.classList.add('portfolio_hidden');
-        portfolio.querySelectorAll('tag').forEach(tag => {
-if (tag.innerText === selektedTag) {
-    portfolio.classList.remove('portfolio_hidden');
-}
-        })
-    })
-}
-*/
 
 
 
