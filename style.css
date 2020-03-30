@@ -1199,7 +1199,7 @@ padding-left: 20px;
 @media (max-width: 1019px) {
   .layout-4-column {
     margin-top: 15px;
-    max-height: 960px;
+    max-height: 100%;
   }
 }
 
@@ -1226,12 +1226,19 @@ padding-left: 20px;
 
 @media (max-width: 767px) {
   .background__portfolio  {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
     margin: 7px;
    
   }
 }
 
+@media (max-width: 374px) {
+  .background__portfolio  {
+    flex: 1 1 40%;
+    margin: 7px;
+   
+  }
+}
 
 
 .layout-4-column .background__portfolio img{
