@@ -1,4 +1,6 @@
 
+
+
 /*Button*/
 const BORDER = document.getElementById('images');
 const FORM = document.getElementById('form');
@@ -6,6 +8,10 @@ const CLOSE_BUTTON = document.getElementById('close-btn');
 
 /*Header*/
 const MENU = document.getElementById('menu');
+
+/*Hamburger*/ 
+
+
 
 /*Slider*/
 const HIDDEN_SLIDER1 = document.getElementById('hidden-layer6');
@@ -19,6 +25,8 @@ HIDDEN_SLIDER1.addEventListener("click", () => {
 HIDDEN_SLIDER2.addEventListener("click", () => {
     document.getElementById('img').classList.toggle("hidden2");
 });
+
+
 
 
 /*Scroll*/
@@ -89,7 +97,40 @@ CLOSE_BUTTON.addEventListener("click", () => {
 });
 
 
+/*Hamburger*/ 
+const HAMBURGER = (event) => {
+    const burger = document.querySelector('.burger');
+    const burger2 = document.querySelector('.hamburger');
+    const background = document.querySelector('.navigation__burger'); 
+    const nav = document.querySelector('.nav__links');
+    const title = document.querySelectorAll('.hamburger__title');
+    const navigation = document.querySelector('.header__navigation');
+    const navLinks = document.querySelectorAll('.navigation >a');
+    burger.addEventListener('click', (event) => {
+        nav.classList.toggle('nav__active');
+        document.getElementById('hidden__title').classList.toggle('hidden__title');
+        burger2.classList.toggle('hamburger__rotate');
+        background.classList.toggle('hamburger__background');
+     
+        title.forEach(el => {
+            el.style.animation = 'navLinkFade 1.3s ease forwards'
+        });
+      
 
+      
+    });
+ 
+   
+  
+};
+
+document.onclick = function(e) {
+    if(event.target.className != 'navigation') {
+        HAMBURGER.style.display = 'none';
+    }
+}
+
+HAMBURGER();
 
 
 /*Header*/
