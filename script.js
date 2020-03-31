@@ -87,9 +87,6 @@ FORM.addEventListener("submit", (event) => {
 
 });
 
-
-
-
 CLOSE_BUTTON.addEventListener("click", () => {
 
     document.getElementById('message-block').classList.add("hidden");
@@ -104,8 +101,6 @@ const HAMBURGER = (event) => {
     const background = document.querySelector('.navigation__burger'); 
     const nav = document.querySelector('.nav__links');
     const title = document.querySelectorAll('.hamburger__title');
-    const navigation = document.querySelector('.header__navigation');
-    const navLinks = document.querySelectorAll('.navigation >a');
     burger.addEventListener('click', (event) => {
         nav.classList.toggle('nav__active');
         document.getElementById('hidden__title').classList.toggle('hidden__title');
@@ -115,23 +110,10 @@ const HAMBURGER = (event) => {
         title.forEach(el => {
             el.style.animation = 'navLinkFade 1.3s ease forwards'
         });
-      
-
-      
-    });
- 
-   
-  
+    });  
 };
 
-document.onclick = function(e) {
-    if(event.target.className != 'navigation') {
-        HAMBURGER.style.display = 'none';
-    }
-}
-
 HAMBURGER();
-
 
 /*Header*/
 MENU.addEventListener("click", (event) => {
@@ -139,17 +121,11 @@ MENU.addEventListener("click", (event) => {
     event.target.classList.add("active");
 });
 
-
-
-
-
 /*Border*/
 BORDER.addEventListener("click", (event) => {
     BORDER.querySelectorAll("img").forEach(el => el.classList.remove("active"));
     event.target.classList.add("active");
 });
-
-
 
 /* carusel */
 
