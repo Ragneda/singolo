@@ -412,8 +412,14 @@ color: rgb(255, 255, 255);
   } 
 
   .header__wrapper {
-      display: flex;
-      justify-content: space-between; 
+    
+  }
+
+  @media (max-width: 767px) {
+    .header__wrapper {
+ margin-left: 20px;
+ margin-right: 10px;
+    }
   }
 
   /*hamburger*/
@@ -424,6 +430,52 @@ color: rgb(255, 255, 255);
   height: 20px;
   margin-top: 16px;
 }
+
+.hamburger__rotate {
+  transform: rotate(-90deg);
+}
+
+.hamburger__title {
+  display: none;
+}
+
+@media (max-width: 767px) {
+.hamburger__title {
+  display: block;
+position: absolute;
+left: 71px;
+top: 24px;
+z-index: 10;
+font-weight: 700;
+font-size: 19.6875px;
+line-height: 24px;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+transition: transform 0.9s ease-in;
+z-index: 12;
+}
+}
+
+.hidden__title {
+  display: none;
+
+  }
+
+
+
+
+@keyframes navLinkFade {
+  from{
+opacity: 0;
+transform: translateX(65px)
+}
+to{
+  opacity: 1;
+  transform: translateX(0px)
+  }
+}
+
+
 
 .hamburger__line::before, 
 .hamburger__line::after {
@@ -454,6 +506,7 @@ color: rgb(255, 255, 255);
 .hamburger__line {
  top: calc( 50% - 1.2px );
   left: 0;
+  z-index: 7;
 }
 
 
@@ -472,27 +525,108 @@ color: rgb(255, 255, 255);
   }
   
   
-
+  @media (max-width: 767px) {
+    .hamburger__background {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      left: 0px;
+      top: 0px;
+      background: #2D303A;
+      opacity: 0.6;
+      z-index: 8;
+    }
+  }
   
   @media (max-width: 767px) {
     .hamburger {
-      display: inline-block;
+      display: block;
+    
     }
+  }
+  
+ 
+   
+  
+
+.nav__links {
+  display: flex;
+}
+
+@media (max-width: 1019px) {
+  .nav__links {
+    margin: 14px 0 0 0;
+ }
+}
+
+
+@media (max-width: 767px) {
+    body {
+      overflow-x: hidden;
+    }
+
+  .nav__links {
+    position: absolute;
+    margin-top: 0;
+    padding-top: 218px;
+    padding-left: 71px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    align-items: left;
+    transform: translateX(-140%);
+    transition: transform 0.6s ease-in;
+    width: 278px;
+    height: 100vh; 
+    background-color: #2D303A;
+    box-shadow: 0px -40px 20px  rgba(0, 0, 0, 0.4); 
+     font-weight: 700;
+    font-size: 24px;
+    line-height: 57px;
+    letter-spacing: -0.035em;
+    z-index: 11;
+ }
+
+ .nav__links li {
+   opacity: 1;
+ }
+}
+
+
+  .navigation {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    
   }
   
   
   @media (max-width: 767px) {
-    .header__navigation {
-      display: none;
+     .navigation{
+      
+
     }
+  }
+
+  .navigation__burger {
+
   }
   
-  @media (max-width: 767px) {
-    .header__wrapper {
- margin-left: 20px;
- margin-right: 35px;
-    }
+  .navigation__link2 {
+   
   }
+
+  .nav__active  {
+    transform: translateX(0%);
+  }
+
+  .nav__active2  {
+    transform: translateX(-140%);
+  }
+
+
+  
   
   @media (max-width: 767px) {
     .header__title {
@@ -511,17 +645,19 @@ color: rgb(255, 255, 255);
   }
   
   .header__navigation {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-  }
-  
-  .navigation {
     display: flex;
-    margin-top: 31px;
-
+    justify-content: space-between; 
+   align-items: baseline;
   }
-  
+ 
+ 
+
+ 
+
+
+
+
+
   .space {
     color: rgba(250, 250, 250, 0);
     letter-spacing: 0.21em;
@@ -532,6 +668,12 @@ color: rgb(255, 255, 255);
     font-weight: 700;
   }
 
+   
+  @media (max-width: 767px) {
+    .space, .point {
+      display: none;
+    }
+  }
 
   li{
     list-style: none;
@@ -1471,7 +1613,7 @@ border-radius: 5px;
 
 @media (max-width: 767px) {
   .aboutUs__title {
-    padding-top: 33px;
+    padding-top: 30px;
   }
 }  
 
@@ -1921,23 +2063,19 @@ border-radius: 5px;
   text-align: center;
   background-color:  #f3f2f2;
   font-family: "Lato""Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2.2rem;
-   
-    padding: 30px 40px;
-
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  padding: 30px 40px;
   width: 800px;
- 
-    border-radius: 5px;
-    color: #5b6179;
-   
+  border-radius: 5px;
+  color: #5b6179; 
 }
+
 
 .result {
   overflow: hidden;
   white-space: nowrap;
-
 }
 
 
