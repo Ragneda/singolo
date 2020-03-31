@@ -13,23 +13,34 @@
 <body id="home">
     <header class="header">
         <div class="wrapper header__wrapper">
-            <span class="hamburger"><span class="hamburger__line"></span></span>
-            <h1 class="header__title"><a class="logo" href="#">SINGOLO<span class="star">*</span></a></h1>
 
-            <nav class="header__navigation">
-                <ul class="navigation" id="menu">
-                    <li class="navigation__link active"><a class="active" href="#home">HOME<span
-                                class="space">__</span><span class="point">·</span><span class="space">__</span></a>
-                    </li>
-                    <li class="navigation__link"><a href="#services">SERVICES<span class="space">__</span><span
-                                class="point">·</span><span class="space">__</span></a></li>
-                    <li class="navigation__link"><a href="#portfolio">PORTFOLIO<span class="space">__</span><span
-                                class="point">·</span><span class="space">__</span></a></li>
-                    <li class="navigation__link"><a href="#about">ABOUT<span class="space">__</span><span
-                                class="point">·</span><span class="space">__</span></a></li>
-                    <li class="navigation__link"><a href="#contact">CONTACT</a></li>
 
-                </ul>
+
+            <nav class="header__navigation burger">
+
+                <div class="hamburger burger" style=" position: absolute;  z-index: 12; opacity: 1; "><span
+                        class="hamburger__line"></span></div>
+                <h1 class="header__title"><a class="logo" href="#">SINGOLO<span class="star">*</span></a></h1>
+
+                <span class="hamburger__title hidden__title" id="hidden__title"><a href="#">SINGOLO<span
+                            class="star">*</span></a></span>
+                <div class="navigation">
+                    <ul id="menu" class="nav__links">
+                        <li class="navigation__link active"><a class="active" href="#home">HOME<span
+                                    class="space">__</span><span class="point">·</span><span class="space">__</span></a>
+                        </li>
+                        <li class="navigation__link"><a href="#services">SERVICES<span class="space">__</span><span
+                                    class="point">·</span><span class="space">__</span></a></li>
+                        <li class="navigation__link"><a href="#portfolio">PORTFOLIO<span class="space">__</span><span
+                                    class="point">·</span><span class="space">__</span></a></li>
+                        <li class="navigation__link"><a href="#about">ABOUT<span class="space">__</span><span
+                                    class="point">·</span><span class="space">__</span></a></li>
+                        <li class="navigation__link"><a href="#contact">CONTACT</a></li>
+
+                    </ul>
+                    <div class="navigation__burger"></div>
+                </div>
+
             </nav>
 
         </div>
